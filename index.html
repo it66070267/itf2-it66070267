@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p"),innerHTML = document.getElementById("username").value + " 's Gallery";
+        }
+        function setProfileImage(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+            </div>
+            <div class="noti">10</div>
+        </div>
+        <div class="username">
+            <a href="https://github.com/it66070267" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;"> eiei's Gallery </p></a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-weight: 400;">Username</label><input style="margin-left: 10px;" type="text" 
+                id="setUsername"><button style="margin-left: 10px;" id="setUsername" onclick="setUsername()">Apply</button></div>
+            <div><label style="font-weight: 400;">ProfileImage</label><input style="margin-left: 10px;" type="text"
+                id="profileimg"><button style="margin-left: 10px;" id="setProfile" onclick="setProfileImage()">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span"><img src="https://i.kym-cdn.com/entries/icons/original/000/026/489/crying.jpg" alt="" style="height: 300px; width: 625px;"></div>
+            <div class="gallery-item"><img src="https://i.redd.it/3xxdlbrhyrr31.jpg" alt="" style="height: 300px; width: 300px;"></div>
+            <div class="gallery-item"><img src="https://en.meming.world/images/en/thumb/e/e2/Crying_Cat_screaming.jpg/300px-Crying_Cat_screaming.jpg" alt=""></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/originals/5b/77/e4/5b77e4a9fb7a568b0f6c8f5b3b585f93.png" alt="" style="height: 300px; width: 300px;"></div>
+            <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpat2_8nlcmoZQ8v-1U9WxeoDStb7e11TJ_BN5PfPZQxH4iZVV06O1NJB6ARMe3cKu7x4&usqp=CAU" alt="" style="height: 300px; width: 300px;"></div>
+            <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtaEam-xTo7wRSZmJrdzYc16eRt8tXtu9Gw&usqp=CAU" alt="" style="height: 300px; width: 300px;"></div>
+            <div class="gallery-item row-span"><img src="https://media.tenor.com/arqlNu8gyJYAAAAC/cat-cat-jumping.gif" alt="" style="height: 625px; width: 300px;"></div>
+            <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgkzDoO4SYof5tVDCtKCXwBLp3RA2ifYf1LsIxvA-z9dXwsAR5Z5WoPvJIR3CuMeAweHw&usqp=CAU" alt="" style="height: 300px; width: 300px;"></div>
+            <div class="gallery-item"><img src="https://media.tenor.com/BP70qe8X0J8AAAAC/crycat-crying-cat.gif" alt="" style="height: 300px; width: 300px;"></div>
+            <div class="gallery-item"><img src="https://pbs.twimg.com/profile_images/1214344448823484416/_ex9T9k0_400x400.jpg" alt="" style="height: 300px; width: 300px;"></div>
+        </div>
+</div>
+</body>
+</html>
