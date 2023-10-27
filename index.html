@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script>
         function setUsername(){
-            document.getElementById("username-p"),innerHTML = document.getElementById("username").value + " 's Gallery";
+            document.getElementById("username-p").InnerHTML = document.getElementById("username").value + " 's Gallery";
         }
         function setProfileImage(){
             document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
@@ -23,11 +23,11 @@
         </div>
         <div class="username">
             <a href="https://github.com/it66070267" class="on-hover">
-            <p style="font-size: x-large; font-weight: 600;"> eiei's Gallery </p></a>
+            <p style="font-size: x-large; font-weight: 600;" id="username-p"> eiei's Gallery </p></a>
         </div>
         <div class="input-group">
             <div><label style="font-weight: 400;">Username</label><input style="margin-left: 10px;" type="text" 
-                id="setUsername"><button style="margin-left: 10px;" id="setUsername" onclick="setUsername()">Apply</button></div>
+                id="username"><button style="margin-left: 10px;" id="setUsername" onclick="setUsername()">Apply</button></div>
             <div><label style="font-weight: 400;">ProfileImage</label><input style="margin-left: 10px;" type="text"
                 id="profileimg"><button style="margin-left: 10px;" id="setProfile" onclick="setProfileImage()">Apply</button></div>
         </div>
